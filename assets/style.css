@@ -1,0 +1,70 @@
+/* TODO update styles */
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkorange;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 42px;
+}
+
+.header h1 .Pinkus {
+    font-family: serif;
+    color: darkgray;
+}
+
+/* navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+button {
+    width: ;
+    margin: ;
+    font size: ;
+    color: aliceblue;
+    background-color: ;
+    border: ;
+}
+
+/* The user's cursor is positioned over the element */
+button:hover {
+    background-color: ;
+    color: ;
+}
+
+/* The user is actively pressing down on the element */
+button:active {
+    font-size: ;
+    box-shadow: ;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+button:focus {
+    outline: ;
+    border-color: ;
+}
+
+/* Main content cards with images */
+.content card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  .card img {
+    width: 100%;
+    min-width: 400px;
+  }
