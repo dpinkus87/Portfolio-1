@@ -19,52 +19,56 @@
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin: 10px;
 }
 
-button {
-    width: ;
-    margin: ;
-    font size: ;
-    color: aliceblue;
-    background-color: ;
-    border: ;
+/* flex styling */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    color: #fff;
 }
 
-/* The user's cursor is positioned over the element */
-button:hover {
-    background-color: ;
-    color: ;
+/* Aside formatting with flex */
+aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: left;
 }
 
-/* The user is actively pressing down on the element */
-button:active {
-    font-size: ;
-    box-shadow: ;
-}
+/* Main content with images */
 
-/* The element is currently in focus, either by tabbing to or clicking on it */
-button:focus {
-    outline: ;
-    border-color: ;
-}
-
-/* Main content cards with images */
-.content card {
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
+.card {
     border-style: solid;
     border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+
+ .personal {
+    flex: none;
+    padding: 5px;
+    text-align: left;
+    border-style: ;
+    border-width: ;
   }
   
   .card header {
     padding: 20px;
-    background: #13293d;
-    color: #fff;
+    color: ;
   }
   
   .card img {
     width: 100%;
-    min-width: 400px;
+    min-width: ;
   }
+
+ 
