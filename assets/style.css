@@ -1,8 +1,6 @@
 /* REVIEW update styles */
 
 body {
-    display:flex;
-    flex-direction:column;
     line-height: 1.2;
   }
 
@@ -12,10 +10,6 @@ body {
     margin-bottom: 0%;
   }
   
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
 
 /* REVIEW Title formatting */
 
@@ -29,6 +23,7 @@ header {
     gap: 25px;
     align-items: flex-end;
     margin-bottom: 0%;
+    ;
 }
   
   .Pinkus { 
@@ -38,6 +33,7 @@ header {
   .Pinkus h1 {
     display: inline-block;
     font-size: 46px;
+    border-right: 5px;
     color: rgb(255, 136, 0);
   }
 
@@ -45,7 +41,7 @@ header {
   
   nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     list-style: none;
     gap: 15px;
     margin-bottom: 0%;
@@ -67,48 +63,71 @@ header {
     text-decoration: underline orangered;
   }
 
+  .hero {
+    height: 300px;
+    background-color: aquamarine;
+  }
 
 /* TODO Main content */
 
-main {
-    display: flex;
-    padding-right: 1%;
-    padding-left: 1%;
+.main-container{
+    flex-wrap: wrap;
+    margin: 10px 10%;
+   
 } 
 
-main section {
-    justify-content: flex-end;
-}
-
-main aside {
-    justify-content: flex-end;
-}
-/* TODO add flex to footer */
-
-footer {
-    background-color: rgb(255, 136, 0);
-    margin-bottom: 0%;
-    display: flex;
-}
-
-.footer {
+.section-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: rgb(255, 136, 0);
+    margin-bottom: 15px;
+}
+
+.title-container {
+  border-right: 5px solid rgb(255, 136, 0);
+  width: 20%;
+}
+
+.content-container {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 45%;
+  padding: 1%;
+}
+
+.main-image {
+  width: 92%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.contact-container {
+  width: 80%;
+  padding-left: 20px;
 }
 
 section ul {
- display: flex;
  list-style: none;
- gap: 35px;
- align-items: center;
+ width: 80%;
+ display: flex;
+ flex-direction: row;
+ align-content: space-between;
 }
+
 
 
 /* TODO  */
 @media screen and (max-width: 768px) {
-    header, main {
+    header, main, section, footer ul {
         flex-direction: column;
         align-items: center;
     }
