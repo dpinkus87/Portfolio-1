@@ -1,80 +1,124 @@
-/* TODO update styles */
+/* REVIEW update styles */
 
-.header {
-    font-family: 'Times New Roman', Times, serif;
-    color: darkorange;
+body {
+    display:flex;
+    flex-direction:column;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 200%;
+    color: rgb(255, 136, 0);
+    margin-bottom: 0%;
+  }
+  
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
+  }
+
+/* REVIEW Title formatting */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 1%;
+    background-color: white;
+    gap: 25px;
+    align-items: flex-end;
+    margin-bottom: 0%;
 }
-
-.header h1 {
+  
+  .Pinkus { 
+    color: gray;
+  }
+  
+  .Pinkus h1 {
     display: inline-block;
-    font-size: 42px;
-}
-
-.header h1 .Pinkus {
-    font-family: serif;
-    color: darkgray;
-}
+    font-size: 46px;
+    color: rgb(255, 136, 0);
+  }
 
 /* navigation styling */
-nav {
+  
+  nav ul {
     display: flex;
-    justify-content: center;
-    margin: 10px;
-}
+    justify-content: space-between;
+    list-style: none;
+    gap: 15px;
+    margin-bottom: 0%;
+  }
 
-/* flex styling */
+  nav a {
+    color: #b9C6ae;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: rgb(255, 136, 0);
+    text-decoration: underline;
+  }
+
+  nav a::after {
+    color: orangered;
+    text-decoration: underline orangered;
+  }
+
+
+/* TODO Main content */
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px;
-    color: #fff;
+    padding-right: 1%;
+    padding-left: 1%;
+} 
+
+main section {
+    justify-content: flex-end;
 }
 
-/* Aside formatting with flex */
-aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
-    text-align: right;
-    border-right: orange;
+main aside {
+    justify-content: flex-end;
 }
-
-/* Main content with images */
-
-.card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 50px;
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
-  }
-
- .personal {
-    flex: none;
-    padding: 5px;
-    text-align: left;
-    border-style: ;
-    border-width: ;
-  }
-
-  .card header {
-    padding: 20px;
-    color: ;
-  }
-  
-  .card img {
-    width: 100%;
-    min-width: ;
-  }
-
-  /* TODO cards below*/
-  .card 
-  .personal
-
- 
 /* TODO add flex to footer */
+
+footer {
+    background-color: rgb(255, 136, 0);
+    margin-bottom: 0%;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 136, 0);
+}
+
+section ul {
+ display: flex;
+ list-style: none;
+ gap: 35px;
+ align-items: center;
+}
+
+
+/* TODO  */
+@media screen and (max-width: 768px) {
+    header, main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        padding-right: 1%;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+}
